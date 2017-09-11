@@ -10,7 +10,9 @@
 }
 
 .cat-image{
-width: 100%;
+	width: 100%;
+	max-height: 400px;
+	overflow: hidden;
 }
 
 .click-me{
@@ -20,13 +22,15 @@ width: 100%;
 }
 
 .click-container{
-	width: 50%;
-	display: inline-block;
+	width: 100%;
+	display: block;
 }
 
 .clicks-made{
 	font-size: 200px;
 	text-align: center;
+	margin: 0px auto;
+
 }
 
 
