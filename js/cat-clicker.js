@@ -69,7 +69,7 @@ function init(){
 
 function listed_cat_clicked(){
 	var catName = $(this).find('.cat-name').text();
-	alert('You clicked: ' + catName);
+	//alert('You clicked: ' + catName);
 	$('#theCat .main-cat-name').text(catsInfo[catName].name);
 	$('#cat-image').attr('src', catsInfo[catName].image);
 	$('#clicks-made').text(catsInfo[catName].clicksMade);
@@ -77,7 +77,7 @@ function listed_cat_clicked(){
 
 function cat_clicked(){
 	var catName = $('.main-cat-name').text();
-	console.log('Cat was indeed clicked! ' + catName);
+	//console.log('Cat was indeed clicked! ' + catName);
 	var $click_counter = $('#clicks-made');
 	var click_count = parseInt($click_counter.text());
 	click_count++;
