@@ -61,14 +61,20 @@ function init(){
 		$lastListedCat = $('.listed-cat').last();
 		$lastListedCat.append('<div class="cat-name-container"><p><a class="cat-name">' + catsInfo[cat].name + '</a></p></div>');
 		$lastListedCat.append('<div class="cat-thumbnail-container"><img src="' + catsInfo[cat].image + '"></div>');
-		$lastListedCat.click(listed_cat_clicked);
+		//$lastListedCat.click(listed_cat_clicked);
+		$lastListedCat.click(function(theCatName) {
+      return function() {
+        alert(theCatName);
+        listed_cat_clicked(theCatName);
+      };
+    }(cat));
 	}
 	var catImage = $('#cat-image');
 	catImage.click(cat_clicked);
 }
 
-function listed_cat_clicked(){
-	var catName = $(this).find('.cat-name').text();
+function listed_cat_clicked(catName){
+	//var catName = $(this).find('.cat-name').text();
 	//alert('You clicked: ' + catName);
 	$('#theCat .main-cat-name').text(catsInfo[catName].name);
 	$('#cat-image').attr('src', catsInfo[catName].image);
