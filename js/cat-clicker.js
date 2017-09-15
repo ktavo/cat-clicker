@@ -64,7 +64,7 @@ function init(){
 		//$lastListedCat.click(listed_cat_clicked);
 		$lastListedCat.click(function(theCatName) {
       return function() {
-        alert(theCatName);
+        //alert(theCatName);
         listed_cat_clicked(theCatName);
       };
     }(cat));
