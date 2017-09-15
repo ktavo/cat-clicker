@@ -1,3 +1,7 @@
+body{
+	background-color: #E9F6C5;
+}
+
 .responsive-row{
 	width: 100%;
 	white-space: nowrap;
@@ -7,15 +11,15 @@
 #cat-list{
 	width: 20%;
 	display: inline-block;
-	padding-left: 10px;
-	background-color: #226800;
+	padding: 0px 10px;
+	background-color: #161F00;
 }
 
 .listed-cat{
 	width: 100%;
 	display: flex;
 	margin: 5px 0px;
-	background-color: #40aa0f;
+	background-color: #C0E06D;
 
 }
 
